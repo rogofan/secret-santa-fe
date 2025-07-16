@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "chrome": "concurrently \"next dev --turbopack\" \"wait-on http://localhost:3000 && open-cli http://localhost:3000 --app=google chrome\"",
+    "chrome": "concurrently \"next dev --turbopack\" \"wait-on http://localhost:3000 && timeout 5 && open-cli http://localhost:3000 --app=google chrome\"",
     "lint": "next lint"
   },
   "dependencies": {
